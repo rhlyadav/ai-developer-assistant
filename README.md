@@ -63,14 +63,16 @@ The API is at `http://localhost:8000`; interactive API docs are at `http://local
 
 ### Frontend
 
+From the project root:
+
 ```powershell
-cd frontend
 npm install
-Copy-Item .env.example .env
+Copy-Item frontend/.env.example frontend/.env
 npm run dev
 ```
 
 Vite prints the local URL (normally `http://localhost:5173`). `VITE_API_URL` can point at another backend URL if needed.
+The root npm workspace manages the frontend package; use `npm run build` to build it from the project root.
 
 ### Environment variables
 
